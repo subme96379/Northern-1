@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
 This issue tracker is only for technical issues related to Northern Core.
-General Northern questions and/or support requests and are best directed to the [Northern Discord](https://discord.savebitcoin.io).
+General Northern questions and/or support requests and are best directed to the [Northern Discord](https://discordapp.com/invite/9nzt37V).
 
 ### Describe the issue
 
