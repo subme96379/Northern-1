@@ -1,6 +1,7 @@
 /****************************************************************************************/
 /* Global color codes:                                                                  */
-/* dark-blue:        #003046                                                            */
+/* dark-blue:          #003046                                                          */
+/* light-green:        #4ec289                                                          */
 /* background:         #f8f6f6                                                          */
 /* input fields:       #e7e7e7                                                          */
 /****************************************************************************************/
@@ -406,7 +407,7 @@ QTableView::item { /* Table Item */
 }
 
 QTableView::item:selected { /* Table Item Selected */
-	background-color:#003046;
+	background-color:#4ec289;
 	color:#fff;
 }
 
@@ -739,11 +740,11 @@ QDialog#RPCConsole QWidget#tab_info QLabel#label_11, QDialog#RPCConsole QWidget#
 }
 
 QDialog#RPCConsole QWidget#tab_peers QLabel#peerHeading { /* Peers Info Header */
-	color:#003046;
+	color:#4ec289;
 }
 
 QDialog#RPCConsole QTableView#peerWidget::item { /* Peers Table Items */
-	color:#333;
+	color:#003046;
 }
 
 QDialog#RPCConsole QPushButton#openDebugLogfileButton {
