@@ -26,7 +26,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Northern (http://www.savebitcoin.io),
+ * This is the developer documentation of the reference client for an experimental new digital currency called Northern (https://www.nort.network/),
  * which enables instant payments to anyone, anywhere in the world. Northern uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
