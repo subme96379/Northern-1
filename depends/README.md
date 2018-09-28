@@ -20,9 +20,9 @@ created. To use it for Bitcoin:
 
 Common `host-platform-triplets` for cross compilation are:
 
-- `i686-w64-mingw32` for Win32
-- `x86_64-w64-mingw32` for Win64
-- `x86_64-apple-darwin11` for MacOSX
+- `i686-w64-mingw32` for Win32 (Ubuntu 16.04 works for this compile)
+- `x86_64-w64-mingw32` for Win64 (Ubuntu 14.04 works for this compile)
+- `x86_64-apple-darwin11` for MacOSX (MacOSX SDKs are needed for this compile)
 - `arm-linux-gnueabihf` for Linux ARM 32 bit
 - `aarch64-linux-gnu` for Linux ARM 64 bit
 
