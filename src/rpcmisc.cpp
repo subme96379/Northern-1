@@ -73,16 +73,17 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "}\n"
             "\nExamples:\n" +
             HelpExampleCli("getinfo", "") + HelpExampleRpc("getinfo", ""));
-   
-    if (chainActive.Tip() == NULL) {
-        obj.push_back(Pair("status", "Blockchain information not yet available, wait a few minutes or try reconnecting"));
-        return obj;
-    }
     
     proxyType proxy;
     GetProxy(NET_IPV4, proxy);
 
     UniValue obj(UniValue::VOBJ);
+    
+        if (chainActive.Tip() == NULL) {
+        obj.push_back(Pair("status", "Blockchain information not yet available, wait a few minutes or try reconnecting"));
+        return obj;
+    }
+    
     obj.push_back(Pair("version", CLIENT_VERSION));
     obj.push_back(Pair("protocolversion", PROTOCOL_VERSION));
 #ifdef ENABLE_WALLET
