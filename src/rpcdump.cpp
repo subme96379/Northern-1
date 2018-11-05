@@ -356,7 +356,7 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
     pwalletMain->GetKeyBirthTimes(mapKeyBirth);
     pwalletMain->GetAllReserveKeys(setKeyPool);
 
-    // sort time/key pairs
+    
     std::vector<std::pair<int64_t, CKeyID> > vKeyBirth;
     for (std::map<CKeyID, int64_t>::const_iterator it = mapKeyBirth.begin(); it != mapKeyBirth.end(); it++) {
         vKeyBirth.push_back(std::make_pair(it->second, it->first));
@@ -445,7 +445,6 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 
     EnsureWalletIsUnlocked();
 
-    /** Collect private key and passphrase **/
     string strKey = params[0].get_str();
     string strPassphrase = params[1].get_str();
 
