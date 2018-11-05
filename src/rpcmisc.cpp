@@ -73,7 +73,12 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "}\n"
             "\nExamples:\n" +
             HelpExampleCli("getinfo", "") + HelpExampleRpc("getinfo", ""));
-
+   
+    if (chainActive.Tip() == NULL) {
+        obj.push_back(Pair("status", "Blockchain information not yet available, wait a few minutes or try reconnecting"));
+        return obj;
+    }
+    
     proxyType proxy;
     GetProxy(NET_IPV4, proxy);
 
