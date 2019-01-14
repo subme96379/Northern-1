@@ -7,7 +7,8 @@
 /****************************************************************************************/
 
 WalletFrame {
-	border-image: url(':/images/walletFrame') 0 0 0 0 stretch stretch;
+	background-image: url(':/images/walletFrame') no-repeat fixed;
+	background-position: left bottom;
 	border-top: 0px solid #000;
 	margin: 0;
 	padding: 0;
@@ -51,70 +52,77 @@ QMenu::item:selected {
 }
 
 QToolBar {
-  background-color: qlineargradient(y1:0, y2: 1, stop: 0 #003046, stop: 0.75 #003046, stop: 0.99 #ffffff, stop: 1 #ffffff);
-  border: 0px solid #fff;
-  padding: 0;
-  margin: 0;
-  width: 90px;
+	background-color: #003046;
+	border: 0px solid #fff;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
 }
 
 QToolBar > QToolButton {
-  alignment: left;
-  background-color: #003046;
-  selection-background-color: transparent;
-  border: 0.5px solid #333;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  min-height: 2.5em;
-  padding: 0em 0em;
-  font-weight: bold;
-  font-size: 11px;
-  color: #fff;
-  width: 90px;
-  height: 70px;
+	background-color:#003046;
+	border:0px solid #112649;
+	selection-background-color:transparent;
+	min-height: 2.5em;
+	padding: 0em 2em;
+	font-weight: bold;
+	font-size: 13px;
+	color: #b8bfc8;
+	width: 190px;
+	height: 55px;
+	text-align: left;
 }
+
 QToolBar > QToolButton:checked {
-  background-color: qlineargradient(x1:0, x2: 1, stop: 0 #4ec289, stop: 0.07 #4ec289, stop: 0.0701 #003046, stop: 1 #003046);
-  color:#ffffff;
+	background-color: #005e89;
+	color:#fff;
+	font-weight:bold;
+	border-right: 7px solid #4ec289;
 }
 
 QToolBar > QToolButton:hover {
-  background-color: qlineargradient(x1:0, x2: 1, stop: 0 #4ec289, stop: 0.07 #4ec289, stop: 0.0701 #003046, stop: 1 #003046);
-  color:#ffff00;
+	background-color: #005e89;
+	color: #fff;
 }
 
 QToolBar > QToolButton#ToolbarSpacer:hover:!selected {
   background-color: #003046; /* Do not highlight placeholder on hover */
 }
 
-QToolBar > QToolButton:pressed {
-  background-color: qlineargradient(x1:0, x2: 1, stop: 0 #00a300, stop: 0.07 #00a300, stop: 0.0701 #003046, stop: 1 #003046);
-  color:#ffffff;
-}
+
+
 
 QMessageBox {
 	background-color:#fff;
 }
 
 QProgressBar {
-	color: #4ec289;
+	color: #ffffff;
 	border: 1px solid transparent;
 	border-radius: 50px;
 	background-color: transparent;
 	border-style: none;
+	font: 12px;
+	text-align: center;
+	
 }
 
 QProgressBar::chunk {
-	background-color: #003046;
-	width: 20px;
+	background-color: #4ec298;
+	width: 12px;
+	font: 12px;
+	text-align: center;
+	
 }
 
 QLabel#progressBarLabel {
 	background-color: transparent;
-	color: #003046;
+	color: #4ec298;
 	padding-left: 5px;
 	padding-right: 5px;
+	font: 12px;
+	padding-top: 242px;
+	padding-bottom: 14px;
 }
 
 QTabWidget {
@@ -828,11 +836,12 @@ QLabel#labelOverviewHeaderLeft {
 	font-weight:bold;
 	font-size:20px;
 	background-color:#ffffff;
+	padding-left:20px;
 }
 
 QLabel#labelOverviewHeaderRight {
 	qproperty-alignment: 'AlignVCenter | AlignRight';
-	background-image: url(':/images/northern_logo_horizontal');
+	background-image: url(':/images/korthern_logo_horizontal');
 	background-repeat: no-repeat;
 }
 
@@ -968,7 +977,7 @@ QWidget .QFrame#frame_RecentTransactions QListView { /* Transaction List */
 /**************************** SEND DIALOG ***********************************************/
 
 QDialog#SendCoinsDialog {
-	background-color:#fff;
+	background-color:#transparent;
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl { /* Coin Control Section */
